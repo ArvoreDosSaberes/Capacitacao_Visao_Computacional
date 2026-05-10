@@ -8,12 +8,27 @@ tags:
 - education
 - jupyter
 - python
+- dataset
 size_categories: n<1K
 task_categories:
 - image-classification
 - image-segmentation
 - object-detection
 - feature-extraction
+- image-filtering
+- image-analysis
+pretty_name: Capacitação em Visão Computacional
+dataset_info:
+  features:
+  - name: activity
+    dtype: string
+  - name: description
+    dtype: string
+  - name: dataset_folder
+    dtype: string
+  - name: notebooks
+    sequence: string
+  config_name: default
 ---
 
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=arvoredossaberes.Capacitacao_Visao_Computacional)
