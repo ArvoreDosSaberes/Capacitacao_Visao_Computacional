@@ -124,6 +124,74 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
+## Como Obter o Dataset
+
+### Via Python
+
+```python
+import requests
+import zipfile
+import os
+
+# URL do repositório (substitua pela URL correta)
+repo_url = "https://github.com/arvoredossaberes/Capacitacao_Visao_Computacional/archive/refs/heads/main.zip"
+
+# Baixar o repositório
+response = requests.get(repo_url)
+with open('repo.zip', 'wb') as f:
+    f.write(response.content)
+
+# Extrair
+with zipfile.ZipFile('repo.zip', 'r') as zip_ref:
+    zip_ref.extractall('.')
+os.remove('repo.zip')
+```
+
+### Via GitHub (HTTPS)
+
+```bash
+# Clonar o repositório
+git clone https://github.com/arvoredossaberes/Capacitacao_Visao_Computacional.git
+
+# Ou baixar como ZIP
+wget https://github.com/arvoredossaberes/Capacitacao_Visao_Computacional/archive/refs/heads/main.zip
+unzip main.zip
+```
+
+### Via GitHub (SSH)
+
+```bash
+# Clonar o repositório usando SSH
+git clone git@github.com:arvoredossaberes/Capacitacao_Visao_Computacional.git
+```
+
+### Via Hugging Face
+
+```python
+from huggingface_hub import snapshot_download
+
+# Baixar dataset do Hugging Face
+repo_id = "arvoredossaberes/Capacitacao_Visao_Computacional"
+local_dir = "./Capacitacao_Visao_Computacional"
+
+snapshot_download(
+    repo_id=repo_id,
+    local_dir=local_dir,
+    repo_type="dataset",
+    local_dir_use_symlinks=False
+)
+```
+
+Ou via CLI:
+
+```bash
+# Instalar a CLI do Hugging Face
+pip install huggingface_hub
+
+# Baixar o dataset
+huggingface-cli download arvoredossaberes/Capacitacao_Visao_Computacional --repo-type dataset --local-dir ./Capacitacao_Visao_Computacional
+```
+
 ## Referências
 
 - Material didático do curso de Visão Computacional
@@ -143,9 +211,10 @@ Este projeto está licenciado sob a licença CC BY-SA 4.0.
 **Resumo:** Repositório contendo atividades práticas e teóricas do curso de Capacitação em Visão Computacional, abordando processamento de imagens, filtragem, segmentação e extração de características.
 **Data de Criação:** 2026-05-10
 **Autor:** Rapport GenerAtiva
-**Versão:** 1.0
+**Versão:** 1.1
 **Última Atualização:** 2026-05-10
 **Atualizado por:** Rapport GenerAtiva
 **Histórico de Alterações:**
 - 2026-05-10 - Criado por Rapport GenerAtiva - Versão 1.0
+- 2026-05-10 - Atualizado por Rapport GenerAtiva - Adicionada seção "Como Obter o Dataset" com instruções para Python, GitHub (HTTPS/SSH) e Hugging Face - Versão 1.1
 >>>>>>> 46664bc (Arquivos descritivos do repositório e das atividades.)
