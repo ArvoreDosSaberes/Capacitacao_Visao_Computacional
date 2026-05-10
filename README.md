@@ -1,3 +1,20 @@
+---
+license: cc-by-sa-4.0
+language:
+- pt
+tags:
+- computer-vision
+- image-processing
+- education
+- jupyter
+- python
+size_categories: n<1K
+task_categories:
+- image-classification
+- image-segmentation
+- object-detection
+- feature-extraction
+---
 
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=arvoredossaberes.Capacitacao_Visao_Computacional)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
