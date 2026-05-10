@@ -15,8 +15,6 @@ task_categories:
 - image-segmentation
 - object-detection
 - feature-extraction
-- image-filtering
-- image-analysis
 pretty_name: Capacitação em Visão Computacional
 dataset_info:
   features:
