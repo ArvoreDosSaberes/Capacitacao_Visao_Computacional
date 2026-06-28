@@ -9,6 +9,7 @@
 ![Last Commit](https://img.shields.io/github/last-commit/arvoredossaberes/Capacitacao_Visao_Computacional)
 
 <!-- Animated Header -->
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1a56db,100:10b981&height=220&section=header&text=Suaviza%C3%A7%C3%A3o%2C%20Remo%C3%A7%C3%A3o%20de%20Ru%C3%ADdo%20e%20Detec%C3%A7%C3%A3o%20de%20Bordas&fontSize=30&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Unidade%202%20%7C%20Cap%C3%ADtulo%201%20%7C%20Tarefa%201&descSize=14&descAlignY=55&descColor=94a3b8" width="100%" alt="Suavização, Remoção de Ruído e Detecção de Bordas Header"/>
 </p>
@@ -30,12 +31,14 @@ Esta atividade obrigatória da Unidade 2, Capítulo 1, Tarefa 1, consiste na apl
 ### Parte 1 - Seleção das Imagens
 
 Seleção de imagens do mini dataset:
+
 - 2 imagens da Classe A
 - 2 imagens da Classe B
 
 Critérios: imagens com granulação, variações de intensidade, baixa qualidade ou compressão visível.
 
 Registro de:
+
 - Nome da imagem
 - Classe
 - Tipo de degradação observada
@@ -46,18 +49,22 @@ Registro de:
 Para cada imagem selecionada:
 
 **Filtro da Média**
+
 - Kernel 3×3
 - Kernel 5×5
 
 **Filtro Gaussiano**
+
 - σ=1
 - σ=3
 
 **Filtro da Mediana**
+
 - Kernel 3×3
 - Kernel 5×5
 
 Análise de:
+
 - Qual filtro reduziu mais o ruído
 - Qual preservou melhor as bordas
 - Variação da variância dos níveis de cinza
@@ -67,19 +74,23 @@ Análise de:
 Aplicação direta na imagem original:
 
 **Operador de Sobel**
+
 - Gradiente em X
 - Gradiente em Y
 - Magnitude do gradiente
 
 **Operador de Prewitt**
+
 - Gradiente em X
 - Gradiente em Y
 - Magnitude
 
 **Detector de Canny**
+
 - Teste com diferentes limiares
 
 Análise de:
+
 - Presença de bordas falsas
 - Sensibilidade ao ruído
 - Comparação visual entre métodos
@@ -91,6 +102,7 @@ Análise de:
 3. Reaplicar Sobel, Prewitt e Canny
 
 Comparação de:
+
 - Quantidade de bordas detectadas
 - Redução de bordas falsas
 - Continuidade das bordas reais
@@ -111,7 +123,7 @@ Comparação de:
 ## Arquivos da Pasta
 
 - `upload-14525446732474592702.pdf` - Enunciado completo da atividade
-- `Linear System Theory and Design- International Fourth -- Chen, Chi-Tsong -- ( WeLib.org ).pdf` - Livro de referência
+- `..\dataset` - Dataset de imagens a ser usado nas analises
 - `2026-05-17` - Data de entrega
 
 ## Tecnologias Utilizadas
@@ -135,6 +147,7 @@ Comparação de:
 </p>
 
 ---
+
 **Resumo:** Atividade obrigatória aplicando técnicas de filtragem espacial para suavização, remoção de ruído e detecção de bordas em imagens reais.
 **Data de Criação:** 2026-05-10
 **Autor:** Rapport GenerAtiva
@@ -142,4 +155,5 @@ Comparação de:
 **Última Atualização:** 2026-05-10
 **Atualizado por:** Rapport GenerAtiva
 **Histórico de Alterações:**
+
 - 2026-05-10 - Criado por Rapport GenerAtiva - Versão 1.0
